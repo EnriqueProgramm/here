@@ -39,8 +39,8 @@
 function getCoordinates(){  
     
      navigator.geolocation.getCurrentPosition(position => {      
-     const latitude = `${(position.coords.latitude).toFixed}`;
-     const longitude = `${(position.coords.longitude).toFixed}`;  
+     const latitude = `${(position.coords.latitude)}`;
+     const longitude = `${(position.coords.longitude)}`;  
      document.getElementById("lat").textContent = latitude ;
      document.getElementById("long").textContent = longitude;  
      
